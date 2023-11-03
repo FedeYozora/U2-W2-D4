@@ -1,0 +1,25 @@
+.navbar-brand img {
+  width: 100px;
+}
+body {
+  background-color: rgb(20, 20, 20);
+}
+
+header {
+  color: rgb(140, 140, 140);
+}
+
+.active {
+  color: rgb(230, 230, 230);
+}
+
+.container {
+  margin: 30px;
+}
+.genre {
+  display: flex;
+}
+
+.dropdown-toggle::after {
+  margin-left: 10px;
+}
