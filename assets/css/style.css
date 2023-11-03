@@ -20,11 +20,32 @@ header {
   display: flex;
 }
 
+.blank {
+  flex-grow: 1;
+}
+
+.navbar-nav {
+  flex-grow: 1;
+}
+.navbar-toggler {
+  background-color: white !important;
+}
+.kids img {
+  width: 40px;
+}
 .card {
   --bs-card-border-color: !important;
   --bs-card-border-radius: 0 !important;
 }
 
+.widthChange {
+  width: 50%;
+}
+.icons i {
+  font-size: 2em;
+  margin-right: 18px;
+  color: darkgray;
+}
 .dropdown-toggle::after {
   margin-left: 10px;
 }
@@ -47,6 +68,10 @@ header {
   width: 87%;
   color: white;
 }
+.second {
+  width: 87%;
+  color: white;
+}
 
 #avatar {
   width: 100px;
@@ -66,4 +91,44 @@ input {
 
 .btn {
   --bs-btn-border-radius: 0 !important;
+}
+#btn-3 {
+  margin-left: 20px;
+  width: 280px;
+}
+
+@media (max-width: 1024px) {
+  .widthChange {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .others {
+    margin-left: -60px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .second {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .profileBox {
+    padding-left: 55px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  #btn-3 {
+    width: 0px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  #first {
+    width: 90%;
+  }
 }
