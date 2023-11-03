@@ -20,6 +20,11 @@ header {
   display: flex;
 }
 
+.card {
+  --bs-card-border-color: !important;
+  --bs-card-border-radius: 0 !important;
+}
+
 .dropdown-toggle::after {
   margin-left: 10px;
 }
