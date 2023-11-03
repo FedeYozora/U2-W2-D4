@@ -38,10 +38,28 @@ header {
 .card {
   --bs-card-border-color: !important;
   --bs-card-border-radius: 0 !important;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .widthChange {
   width: 50%;
+}
+.displayIcons {
+  font-size: 2em;
+}
+.bi-text-left::before {
+  border: white 1px solid;
+  padding-inline: 7px;
+  padding-block: 3px;
+  color: darkgray;
+  margin-right: 5px;
+}
+.bi-grid::before {
+  border: white 1px solid;
+  padding-inline: 7px;
+  padding-block: 3px;
+  color: darkgray;
+  margin-right: 5px;
 }
 .icons i {
   font-size: 2em;
@@ -101,6 +119,14 @@ input {
   margin-left: 20px;
   width: 280px;
 }
+.zoom {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.zoom:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
 
 @media (max-width: 1024px) {
   .widthChange {
@@ -135,5 +161,14 @@ input {
 @media (min-width: 425px) and (max-width: 767px) {
   #first {
     width: 90%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
