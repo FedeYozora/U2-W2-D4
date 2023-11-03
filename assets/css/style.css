@@ -10,7 +10,9 @@ header {
 }
 
 .active {
-  color: rgb(230, 230, 230);
+  color: black !important;
+  font-weight: 700;
+  background-color: rgb(230, 230, 230) !important;
 }
 
 .container {
@@ -89,6 +91,9 @@ input {
   border-color: #666666 !important;
 }
 
+.fontChange {
+  font-size: 13px;
+}
 .btn {
   --bs-btn-border-radius: 0 !important;
 }
